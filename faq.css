@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+/* header */
+header{
+    width: 100%;
+    background-color: rgb(26, 26, 114);
+    height: 20vh;
+    border-bottom: 5px solid rgb(167, 166, 166);
+    text-align: center;
+    display: flex;
+    
+}
+.head{
+    width: 70%;
+    height:55px;
+    color: white;
+}
+.logo h3{
+    color: white;
+    margin-left: 70px;
+    font-size: 100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.head h6{
+    margin-top: 42px;
+    font-size: 40px;
+    text-align: left;
+    font-family: italic;
+}
+.head p{
+    font-size: 15px;
+    font-family: serif;
+    text-align: left;
+}
+
+.nav {
+    background-color: white;
+    width: 50%;
+    height: 30px;
+    padding: 2px 0;
+    border-top: 3px solid grey;
+    margin: 40px 30px;
+
+}
+.nav a{
+    text-decoration: none;
+    color:  rgb(26, 26, 114);
+    font-size: 13px;
+    font-weight: 530;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+section{
+    display: flex;
+    padding: 20px 0 5px 40px;
+    overflow: hidden;
+}
+/* main-content */
+.main-content{
+    width: 45%;
+    margin: 0 60px 0 100px;
+}
+.main-content h5{
+    font-size: 20px;
+    margin: 30px 0px 0px 250px;
+    color: rgb(12, 39, 12);
+}
+.main-content hr{
+    margin-bottom: 8px;
+}
+.main-content h1{
+    margin-top: 30px;
+    color: rgb(12, 39, 12);
+}
+.main-content p{
+    line-height: 25px;
+    color: rgb(12, 39, 12);
+}
+.main-content a{
+    color: rgb(12, 39, 12);
+}
+/* side content */
+.side-content{
+    width: 300px;
+}
+.side-content #para{
+    background-color:  rgb(26, 26, 114);
+    font-size: 18px;
+    color: white;
+    padding: 0.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.categories h6{
+    font-size: 15px;
+    margin-top: 5px;
+    background-color:  rgb(26, 26, 114);
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+.categories img{
+    width: 300px;
+    height: 50vh;
+}
+
+.feture-paper p{
+    font-size: 12px;
+    padding: 15px;
+
+}
+.feture-paper h6{
+    font-size: 12px;
+    margin-top: 5px;
+    background-color:  rgb(26, 26, 114);
+    padding: 0.5rem;
+    color: white;
+}
+.choosing-right-instrument h6{
+    font-size: 12px;
+    margin-top: 5px;
+    background-color:  rgb(26, 26, 114);
+    padding: 15px;
+    color: white;
+}
+.choosing-right-instrument p{
+    font-size: 12px;
+    padding: 15px;
+}
+.ways-to-contribute h6{
+    font-size: 12px;
+    margin-top: 5px;
+    background-color:  rgb(26, 26, 114);
+    padding: 15px;
+    color: white;
+}
+.ways-to-contribute p{
+    font-size: 12px;
+    padding: 15px;
+}
+.incredible-sample h6{
+    font-size: 12px;
+    margin-top: 5px;
+    background-color:  rgb(26, 26, 114);
+    padding: 15px;
+    color: white;
+}
+.incredible-sample p{
+    font-size: 12px;
+    padding: 15px;
+}
+/* footer */
+footer{
+    background-color:  rgb(26, 26, 114);
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100%;
+    padding:0.3rem 1rem;
+    font-size: 13px;
+    gap:10px;
+}
+footer a{
+    border-left: 2px solid white;
+    color: white;
+    padding: 0.3rem;
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    .checkbtn{
+        display: block;
+    }
+    header .nav{
+        
+        position: fixed;
+        width: 70%;
+        height: 100%;
+        background-color: rgb(26, 26, 114);
+        margin-top: 0;
+        left: -100%;
+        margin-left: 0;
+        text-align:left;
+        transition: all .5s; 
+        flex-direction: column; 
+        text-align: center;
+        font-size: 30px;
+        padding-top: 80px;
+    }
+    .nav img{
+        display: block;
+        width: 30%;
+        height: auto;
+    }
+
+    .nav strong{
+        display: none;
+    }
+    .nav a{
+        width: 100%;
+        color: white;
+        display: block;
+        line-height: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .nav a:hover{
+        background-color: white;
+        color: rgb(26, 26, 114);
+        border-radius: 6px;
+        width: 250px;
+        margin-left: 35px;
+        text-align: center;
+        padding-top: 12px;
+    }
+    #check:checked ~ .nav{
+        left: 0;
+    }
+    
+    .side-content{
+        margin-top: 40px;
+        margin-left: 90px;
+        width: 30%;
+    }
+    .side-content img{
+        width: 150px;
+        height: 200px;
+    }
+    .main-content{
+        margin: 0 -40px 0 10px;
+        width: 50%;
+    }
+}
